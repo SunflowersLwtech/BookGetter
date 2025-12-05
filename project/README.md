@@ -1,165 +1,191 @@
-# BookGetter - Online Bookstore
+# BookGetter - Online Bookstore System
 
-A full-featured online bookstore built with Java Servlets and JSP.
+A comprehensive, full-stack online bookstore application built with standard Java Enterprise technologies. This project demonstrates a complete e-commerce workflow including user authentication, product management, shopping cart functionality, order processing, and an administrative dashboard.
 
-## Technology Stack
+![Project Status](https://img.shields.io/badge/status-active-success.svg)
+![Java](https://img.shields.io/badge/Java-17-orange.svg)
+![Tomcat](https://img.shields.io/badge/Tomcat-11.0-yellow.svg)
+![Gradle](https://img.shields.io/badge/Gradle-8.5-blue.svg)
 
-- **Frontend**: HTML + CSS + JavaScript
-- **Backend**: Java (Servlets + JSP)
-- **Web Server**: Apache Tomcat
-- **Data Storage**: File-based JSON storage
-- **Build Tool**: Gradle 8.5
-- **Version Control**: Git
+## 📖 Table of Contents
 
-## Features
+-   [Features](#-features)
+-   [Technology Stack](#-technology-stack)
+-   [Project Structure](#-project-structure)
+-   [Prerequisites](#-prerequisites)
+-   [Installation & Deployment](#-installation--deployment)
+-   [Usage Guidelines](#-usage-guidelines)
+-   [API Documentation](#-api-documentation)
+-   [Troubleshooting](#-troubleshooting)
 
-### Customer Features
-- User registration and login with role selection (Customer/Admin)
-- Browse books by category
-- Search books by title, author, or category
-- View book details with images
-- Add books to shopping cart
-- Manage cart (update quantity, remove items)
-- Place orders with shipping information
-- View order history
-- Update profile information
+## 🚀 Features
 
-### Admin Features
-- Dashboard with statistics (total books, orders, customers, revenue)
-- Manage books (add, edit, delete)
-- Update order status (pending, shipped, completed)
-- View all users
-- Image URL support for book covers
+### Front-Office (Customer)
+-   **Authentication**: Secure registration and login system with session management.
+-   **Book Discovery**: 
+    -   Browse books by dynamic categories (Fiction, Technology, etc.).
+    -   Advanced search functionality (Title, Author, Category).
+    -   Rich book details with cover images and descriptions.
+-   **Shopping Experience**:
+    -   Persistent shopping cart.
+    -   Real-time stock validation.
+    -   Easy quantity adjustment and item removal.
+-   **Order Management**:
+    -   Streamlined checkout process.
+    -   Order history tracking.
+    -   Shipping address management.
+-   **User Profile**: View and update personal information.
 
-## Project Structure
+### Back-Office (Admin)
+-   **Dashboard**: Real-time statistics (Total Revenue, Orders, Users, Books).
+-   **Inventory Management**: 
+    -   Add, Edit, and Delete books.
+    -   **Image Upload**: Local file upload support for book covers.
+-   **Order Fulfillment**: 
+    -   View all customer orders.
+    -   Update order status (`Pending` -> `Shipped` -> `Completed`).
+-   **User Management**: View registered user details.
 
+## 🛠 Technology Stack
+
+### Backend
+-   **Core**: Java SE 17
+-   **Web Framework**: Jakarta Servlet 6.0
+-   **Server**: Apache Tomcat 11.0
+-   **Build Tool**: Gradle 8.5
+-   **Data Persistence**: File-based JSON storage (Gson library) with thread-safe access.
+
+### Frontend
+-   **Core**: HTML5, CSS3, JavaScript (ES6+)
+-   **Styling**: Custom responsive CSS (Flexbox/Grid), no external frameworks.
+-   **Communication**: Fetch API for asynchronous REST calls.
+
+### Development Tools
+-   **Automation**: PowerShell scripts for one-click build and deployment.
+-   **Version Control**: Git
+
+## 📂 Project Structure
+
+```text
+BookGetter/
+├── project/
+│   ├── dev/                        # Deployment Automation Scripts
+│   │   ├── deploy.ps1              # Build, clean, and deploy to Tomcat
+│   │   ├── start.ps1               # Start Tomcat server
+│   │   └── stop.ps1                # Stop Tomcat server
+│   ├── src/main/
+│   │   ├── java/com/bookgetter/
+│   │   │   ├── models/             # POJOs (Book, User, Order, Cart)
+│   │   │   ├── servlets/           # REST API Controllers
+│   │   │   ├── services/           # Business Logic Layer
+│   │   │   └── utils/              # JSON, File, Session utilities
+│   │   └── webapp/                 # Frontend Assets
+│   │       ├── css/                # Stylesheets
+│   │       ├── js/                 # Client-side Logic
+│   │       ├── data/               # Runtime Data Storage (JSON)
+│   │       ├── images/             # Uploaded Book Covers
+│   │       └── *.html              # View Templates
+│   ├── build.gradle                # Dependencies & Build Config
+│   └── settings.gradle             # Project Name Config
+├── 项目技术栈信息.md                # Environment Configuration Reference
+└── README.md                       # Documentation
 ```
-bookgetter/
-├── src/
-│   └── main/
-│       ├── java/com/bookgetter/
-│       │   ├── models/          # Data models
-│       │   ├── servlets/        # HTTP request handlers
-│       │   ├── services/        # Business logic
-│       │   └── utils/           # Helper utilities
-│       └── webapp/
-│           ├── css/             # Stylesheets
-│           ├── js/              # JavaScript files
-│           ├── WEB-INF/         # Web configuration
-│           └── *.html           # Frontend pages
-├── data/                        # JSON data storage
-├── build.gradle                 # Gradle build configuration
-└── README.md
+
+## 📋 Prerequisites
+
+Before running the project, ensure your environment meets the following requirements. The `deploy.ps1` script can auto-detect these if installed in standard locations.
+
+-   **Java Development Kit (JDK)**: Version 17 or higher.
+-   **Apache Tomcat**: Version 11.0 or compatible 10.x.
+-   **PowerShell**: Version 5.1+ (Standard on Windows 10/11).
+
+> **Tip**: Project paths for Java and Tomcat can be configured in `项目技术栈信息.md` if they are in non-standard locations.
+
+## 💿 Installation & Deployment
+
+This project includes advanced PowerShell scripts to automate the entire build and deployment lifecycle.
+
+### 1. Clone the Repository
+```powershell
+git clone https://github.com/SunflowersLwtech/BookGetter.git
+cd BookGetter/project
 ```
 
-## Getting Started
+### 2. Automated Deployment (Recommended)
+Run the deployment script to build the WAR file, stop any running server, deploy the artifact, and restart the server.
 
-### Prerequisites
-- Java 17 or higher
-- Gradle 8.5 or higher
-- Apache Tomcat 10.x
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd bookgetter
+```powershell
+# Run from project root
+.\dev\deploy.ps1
 ```
 
-2. Build the project:
-```bash
-gradle build
-```
+**What this script does:**
+1.  Checks for JDK and Tomcat availability.
+2.  Stops Tomcat if it's currently running.
+3.  Cleans old deployments.
+4.  Runs `./gradlew war` to build the application.
+5.  Copies `BookGetter.war` to Tomcat's `webapps` directory.
+6.  Starts Tomcat and opens the application.
 
-3. Deploy to Tomcat:
-```bash
-# Copy the WAR file to Tomcat's webapps directory
-cp build/libs/bookgetter.war $TOMCAT_HOME/webapps/
-```
+### 3. Server Control
+-   **Start Server**: `.\dev\start.ps1`
+-   **Stop Server**: `.\dev\stop.ps1`
 
-4. Start Tomcat:
-```bash
-$TOMCAT_HOME/bin/startup.sh  # Linux/Mac
-$TOMCAT_HOME/bin/startup.bat # Windows
-```
+## 📖 Usage Guidelines
 
-5. Access the application:
-```
-http://localhost:8080/bookgetter/
-```
+### Accessing the Application
+Once deployed, access the application at:
+**http://localhost:8080/BookGetter/**
 
-## Data Storage
+### Default Credentials
+You can register a new account or use the existing data if available.
 
-The application uses file-based JSON storage in the `data/` directory:
-- `books.json` - Book catalog (48 books preloaded)
-- `users.json` - User accounts
-- `orders.json` - Order history
-- `carts.json` - Shopping carts
+-   **Admin Role**: Select "Admin" during registration (or manually update `users.json`).
+-   **Regular User**: Select "Customer" during registration.
 
-## Default Book Catalog
+### Data Storage
+Data is stored securely in JSON format within the deployment directory. To reset data, delete the `.json` files in the `data/` folder, and the application will regenerate them (or load defaults for books).
 
-The application comes preloaded with 48 books across various categories:
-- Fiction
-- Self-Help
-- Thriller
-- History
-- Biography
-- Business
-- Science Fiction
-- Fantasy
-- And more...
+## 🔌 API Documentation
 
-All books include:
-- Title and author information
-- ISBN
-- Price in RM (Malaysian Ringgit)
-- Category
-- Description
-- Stock quantity
-- Book cover images from Pexels
+All API endpoints accept and return JSON.
 
-## User Registration
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :--- |
+| **Auth** | | | |
+| `POST` | `/api/login` | Authenticate user | No |
+| `POST` | `/api/register` | Create account | No |
+| `DELETE` | `/api/login` | Logout | Yes |
+| **Books** | | | |
+| `GET` | `/api/books` | List all books (supports filtering) | No |
+| `GET` | `/api/books?id={id}` | Get book details | No |
+| `POST` | `/api/admin/books` | Create new book | **Admin** |
+| `POST` | `/api/upload` | Upload book cover image | **Admin** |
+| **Cart** | | | |
+| `GET` | `/api/cart` | Get current cart | Yes |
+| `POST` | `/api/cart` | Add item to cart | Yes |
+| `PUT` | `/api/cart` | Update item quantity | Yes |
+| **Orders** | | | |
+| `GET` | `/api/orders` | Get order history | Yes |
+| `POST` | `/api/orders` | Place new order | Yes |
+| `PUT` | `/api/admin/orders/{id}` | Update order status | **Admin** |
 
-Users can register with two roles:
-1. **Customer** - Can browse, purchase, and manage orders
-2. **Admin** - Full access including book and order management
+## 🔧 Troubleshooting
 
-## API Endpoints
+### Common Issues
 
-- `POST /api/login` - User login
-- `POST /api/register` - User registration
-- `DELETE /api/login` - Logout
-- `GET /api/books` - Get all books
-- `GET /api/books?id={id}` - Get book by ID
-- `GET /api/books?search={query}` - Search books
-- `GET /api/books?category={category}` - Filter by category
-- `GET /api/cart` - Get user's cart
-- `POST /api/cart` - Add to cart
-- `PUT /api/cart` - Update cart item
-- `DELETE /api/cart` - Clear cart
-- `GET /api/orders` - Get user's orders
-- `POST /api/orders` - Place order
-- `GET /api/user` - Get user profile
-- `PUT /api/user` - Update profile
-- `GET /api/admin/stats` - Get dashboard stats (admin only)
-- `GET /api/admin/books` - Get all books (admin only)
-- `POST /api/admin/books` - Add book (admin only)
-- `PUT /api/admin/books/{id}` - Update book (admin only)
-- `DELETE /api/admin/books/{id}` - Delete book (admin only)
-- `GET /api/admin/orders` - Get all orders (admin only)
-- `PUT /api/admin/orders/{id}` - Update order status (admin only)
-- `GET /api/admin/users` - Get all users (admin only)
+1.  **Port 8080 Application Issue**
+    -   **Symptom**: "Port 8080 is already in use".
+    -   **Fix**: Run `.\dev\stop.ps1` to kill the process occupying the port.
 
-## Design
+2.  **Environment Variables Not Found**
+    -   **Symptom**: `deploy.ps1` complains about missing Java or Tomcat.
+    -   **Fix**: Ensure `Start-Process` can find `java` in PATH, or set `JAVA_HOME` and `CATALINA_HOME` environment variables manually. Alternatively, edit `项目技术栈信息.md` to point to your specific paths.
 
-The application features a modern, professional design with:
-- Blue and teal color scheme
-- Responsive layout
-- Smooth animations and transitions
-- Clean, intuitive user interface
-- Mobile-friendly design
+3.  **Image Upload Fails**
+    -   **Symptom**: "Failed to upload image".
+    -   **Fix**: Ensure the Tomcat process has write permissions to the deployment directory `webapps/BookGetter/images`.
 
-## License
-
-This project is for educational purposes.
+---
+**Developed by LIUWEI**
+*All rights reserved.*
