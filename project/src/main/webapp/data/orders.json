@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1764877885886",
+    "userId": "2",
+    "items": [
+      {
+        "bookId": "11",
+        "bookTitle": "Introduction to Algorithms",
+        "bookAuthor": "Thomas H. Cormen",
+        "price": 199.9,
+        "quantity": 1,
+        "subtotal": 199.9
+      },
+      {
+        "bookId": "2",
+        "bookTitle": "1984",
+        "bookAuthor": "George Orwell",
+        "price": 42.5,
+        "quantity": 1,
+        "subtotal": 42.5
+      }
+    ],
+    "totalAmount": 242.4,
+    "status": "completed",
+    "shippingAddress": "pinafore",
+    "phone": "183 5536 6842",
+    "createdAt": 1764877885886
+  }
+]

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - BookGetter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="color: inherit; text-decoration: none;">BookGetter</a></h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="books.html" class="nav-link">Books</a>
+                <a href="cart.html" class="nav-link" id="cart-link">
+                    Cart <span class="cart-badge" id="cart-badge">0</span>
+                </a>
+                <div class="nav-user" id="nav-user" style="display: none;">
+                    <a href="orders.html" class="nav-link active">Orders</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                    <a href="admin.html" class="nav-link" id="admin-link" style="display: none;">Admin</a>
+                    <button class="btn btn-outline" id="logout-btn">Logout</button>
+                </div>
+                <div class="nav-guest" id="nav-guest">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>My Orders</h1>
+        </div>
+    </section>
+
+    <section class="orders-section">
+        <div class="container">
+            <div id="loading" class="loading">Loading orders...</div>
+            <div id="no-orders" style="display: none;" class="empty-state">
+                <h2>No orders yet</h2>
+                <p>Start shopping to place your first order</p>
+                <a href="books.html" class="btn btn-primary">Browse Books</a>
+            </div>
+            <div id="orders-list"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BookGetter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/modal.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html>

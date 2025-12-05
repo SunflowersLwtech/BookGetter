@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookGetter - Your Online Bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>BookGetter</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="books.html" class="nav-link">Books</a>
+                <a href="cart.html" class="nav-link" id="cart-link">
+                    Cart <span class="cart-badge" id="cart-badge">0</span>
+                </a>
+                <div class="nav-user" id="nav-user" style="display: none;">
+                    <a href="orders.html" class="nav-link">Orders</a>
+                    <a href="profile.html" class="nav-link">Profile</a>
+                    <a href="admin.html" class="nav-link" id="admin-link" style="display: none;">Admin</a>
+                    <button class="btn btn-outline" id="logout-btn">Logout</button>
+                </div>
+                <div class="nav-guest" id="nav-guest">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="register.html" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Discover Your Next Great Read</h1>
+            <p class="hero-subtitle">Browse thousands of books from all genres and authors</p>
+            <a href="books.html" class="btn btn-primary btn-lg">Explore Books</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose BookGetter?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Wide Selection</h3>
+                    <p>Thousands of books across all genres and categories</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick and reliable shipping to your doorstep</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with regular discounts</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Checkout</h3>
+                    <p>Safe and secure payment processing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-books">
+        <div class="container">
+            <h2 class="section-title">Popular Books</h2>
+            <div class="books-grid" id="popular-books"></div>
+            <div class="text-center">
+                <a href="books.html" class="btn btn-outline btn-lg">View All Books</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BookGetter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/modal.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

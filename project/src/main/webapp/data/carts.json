@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1764877744812",
+    "userId": "2",
+    "items": [
+      {
+        "bookId": "3",
+        "bookTitle": "The Great Gatsby",
+        "bookAuthor": "F. Scott Fitzgerald",
+        "price": 39.9,
+        "quantity": 4,
+        "imageUrl": "https://images.pexels.com/photos/1342460/pexels-photo-1342460.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "bookId": "2",
+        "bookTitle": "1984",
+        "bookAuthor": "George Orwell",
+        "price": 42.5,
+        "quantity": 27,
+        "imageUrl": "https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "bookId": "4",
+        "bookTitle": "Pride and Prejudice",
+        "bookAuthor": "Jane Austen",
+        "price": 38.9,
+        "quantity": 3,
+        "imageUrl": "https://images.pexels.com/photos/2908984/pexels-photo-2908984.jpeg?auto=compress&cs=tinysrgb&w=800"
+      },
+      {
+        "bookId": "1",
+        "bookTitle": "test",
+        "bookAuthor": "test",
+        "price": 99999,
+        "quantity": 3,
+        "imageUrl": "https://en.wikipedia.org/wiki/Image"
+      }
+    ],
+    "updatedAt": 1764881942275
+  },
+  {
+    "id": "1764878232914",
+    "userId": "1",
+    "items": [],
+    "updatedAt": 1764878232914
+  }
+]

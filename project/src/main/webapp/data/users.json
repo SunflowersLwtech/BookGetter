@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "username": "admin",
+    "password": "admin123",
+    "email": "admin@bookgetter.com",
+    "role": "admin",
+    "address": "",
+    "phone": "",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "2",
+    "username": "customer",
+    "password": "customer123",
+    "email": "customer@bookgetter.com",
+    "role": "customer",
+    "address": "123 Main Street",
+    "phone": "0123456789",
+    "createdAt": 1609459200000
+  }
+]

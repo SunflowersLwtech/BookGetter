@@ -1,0 +1,472 @@
+[
+  {
+    "id": "2",
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Fiction",
+    "price": 42.5,
+    "stock": 29,
+    "imageUrl": "images/books/fiction-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "3",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "category": "Fiction",
+    "price": 39.9,
+    "stock": 20,
+    "imageUrl": "images/books/fiction-2.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "4",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "category": "Fiction",
+    "price": 38.9,
+    "stock": 18,
+    "imageUrl": "images/books/fiction-3.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "5",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "category": "Fiction",
+    "price": 44.5,
+    "stock": 22,
+    "imageUrl": "images/books/fiction-4.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "6",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "category": "Fiction",
+    "price": 89.9,
+    "stock": 15,
+    "imageUrl": "images/books/fiction-5.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "7",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "category": "Fiction",
+    "price": 41.9,
+    "stock": 17,
+    "imageUrl": "images/books/fiction-6.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "8",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "category": "Fiction",
+    "price": 43.9,
+    "stock": 21,
+    "imageUrl": "images/books/fiction-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "9",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Technology",
+    "price": 125.9,
+    "stock": 12,
+    "imageUrl": "images/books/tech-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "10",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "category": "Technology",
+    "price": 119.9,
+    "stock": 14,
+    "imageUrl": "images/books/tech-2.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "11",
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "category": "Technology",
+    "price": 199.9,
+    "stock": 7,
+    "imageUrl": "images/books/tech-3.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "12",
+    "title": "Design Patterns",
+    "author": "Erich Gamma",
+    "category": "Technology",
+    "price": 139.9,
+    "stock": 10,
+    "imageUrl": "images/books/tech-4.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "13",
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "category": "Technology",
+    "price": 98.9,
+    "stock": 16,
+    "imageUrl": "images/books/tech-5.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "14",
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "category": "Technology",
+    "price": 109.9,
+    "stock": 13,
+    "imageUrl": "images/books/tech-6.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "15",
+    "title": "The Art of Computer Programming",
+    "author": "Donald Knuth",
+    "category": "Technology",
+    "price": 249.9,
+    "stock": 6,
+    "imageUrl": "images/books/tech-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "16",
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "category": "Technology",
+    "price": 95.9,
+    "stock": 15,
+    "imageUrl": "images/books/tech-8.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "17",
+    "title": "Educated",
+    "author": "Tara Westover",
+    "category": "Education",
+    "price": 56.9,
+    "stock": 24,
+    "imageUrl": "images/books/education-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "18",
+    "title": "How to Read a Book",
+    "author": "Mortimer J. Adler",
+    "category": "Education",
+    "price": 62.9,
+    "stock": 19,
+    "imageUrl": "images/books/education-2.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "19",
+    "title": "Make It Stick",
+    "author": "Peter C. Brown",
+    "category": "Education",
+    "price": 69.9,
+    "stock": 17,
+    "imageUrl": "images/books/education-3.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "20",
+    "title": "The Art of Learning",
+    "author": "Josh Waitzkin",
+    "category": "Education",
+    "price": 64.9,
+    "stock": 21,
+    "imageUrl": "images/books/education-4.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "21",
+    "title": "Mindset: The New Psychology",
+    "author": "Carol S. Dweck",
+    "category": "Education",
+    "price": 59.9,
+    "stock": 26,
+    "imageUrl": "images/books/education-5.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "22",
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "category": "Education",
+    "price": 72.9,
+    "stock": 22,
+    "imageUrl": "images/books/education-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "23",
+    "title": "Peak: Secrets from the Science",
+    "author": "Anders Ericsson",
+    "category": "Education",
+    "price": 67.9,
+    "stock": 18,
+    "imageUrl": "images/books/education-8.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "24",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Education",
+    "price": 65.9,
+    "stock": 20,
+    "imageUrl": "images/books/education-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "25",
+    "title": "The Story of Art",
+    "author": "E.H. Gombrich",
+    "category": "Art",
+    "price": 149.9,
+    "stock": 11,
+    "imageUrl": "images/books/art-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "26",
+    "title": "Ways of Seeing",
+    "author": "John Berger",
+    "category": "Art",
+    "price": 79.9,
+    "stock": 14,
+    "imageUrl": "images/books/art-2.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "27",
+    "title": "The Art Book",
+    "author": "Phaidon Press",
+    "category": "Art",
+    "price": 169.9,
+    "stock": 9,
+    "imageUrl": "images/books/art-4.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "28",
+    "title": "Color and Light",
+    "author": "James Gurney",
+    "category": "Art",
+    "price": 119.9,
+    "stock": 13,
+    "imageUrl": "images/books/art-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "29",
+    "title": "Drawing on the Right Side",
+    "author": "Betty Edwards",
+    "category": "Art",
+    "price": 89.9,
+    "stock": 16,
+    "imageUrl": "images/books/art-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "30",
+    "title": "Understanding Comics",
+    "author": "Scott McCloud",
+    "category": "Art",
+    "price": 85.9,
+    "stock": 15,
+    "imageUrl": "images/books/art-6.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "31",
+    "title": "The Elements of Style",
+    "author": "William Strunk Jr.",
+    "category": "Art",
+    "price": 49.9,
+    "stock": 25,
+    "imageUrl": "images/books/art-6.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "32",
+    "title": "Interaction of Color",
+    "author": "Josef Albers",
+    "category": "Art",
+    "price": 135.9,
+    "stock": 10,
+    "imageUrl": "images/books/art-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "33",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "category": "History",
+    "price": 79.9,
+    "stock": 28,
+    "imageUrl": "images/books/history-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "34",
+    "title": "The Guns of August",
+    "author": "Barbara Tuchman",
+    "category": "History",
+    "price": 72.9,
+    "stock": 16,
+    "imageUrl": "images/books/history-2.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "35",
+    "title": "A People's History",
+    "author": "Howard Zinn",
+    "category": "History",
+    "price": 85.9,
+    "stock": 14,
+    "imageUrl": "images/books/history-3.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "36",
+    "title": "The Wright Brothers",
+    "author": "David McCullough",
+    "category": "History",
+    "price": 69.9,
+    "stock": 18,
+    "imageUrl": "images/books/history-4.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "37",
+    "title": "Team of Rivals",
+    "author": "Doris Kearns Goodwin",
+    "category": "History",
+    "price": 92.9,
+    "stock": 12,
+    "imageUrl": "images/books/history-5.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "38",
+    "title": "The Rise and Fall of the Third Reich",
+    "author": "William L. Shirer",
+    "category": "History",
+    "price": 119.9,
+    "stock": 10,
+    "imageUrl": "images/books/history-6.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "39",
+    "title": "The Silk Roads",
+    "author": "Peter Frankopan",
+    "category": "History",
+    "price": 82.9,
+    "stock": 15,
+    "imageUrl": "images/books/history-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "40",
+    "title": "Genghis Khan and the Making",
+    "author": "Jack Weatherford",
+    "category": "History",
+    "price": 74.9,
+    "stock": 17,
+    "imageUrl": "images/books/history-8.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "41",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "category": "Science",
+    "price": 75.9,
+    "stock": 23,
+    "imageUrl": "images/books/science-1.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "42",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "category": "Science",
+    "price": 69.9,
+    "stock": 19,
+    "imageUrl": "images/books/science-2.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "43",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "category": "Science",
+    "price": 82.9,
+    "stock": 20,
+    "imageUrl": "images/books/science-3.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "44",
+    "title": "The Origin of Species",
+    "author": "Charles Darwin",
+    "category": "Science",
+    "price": 65.9,
+    "stock": 16,
+    "imageUrl": "images/books/science-4.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "45",
+    "title": "Astrophysics for People in a Hurry",
+    "author": "Neil deGrasse Tyson",
+    "category": "Science",
+    "price": 59.9,
+    "stock": 25,
+    "imageUrl": "images/books/science-5.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "46",
+    "title": "The Gene: An Intimate History",
+    "author": "Siddhartha Mukherjee",
+    "category": "Science",
+    "price": 89.9,
+    "stock": 14,
+    "imageUrl": "images/books/science-6.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "47",
+    "title": "The Elegant Universe",
+    "author": "Brian Greene",
+    "category": "Science",
+    "price": 92.9,
+    "stock": 13,
+    "imageUrl": "images/books/science-7.jpg",
+    "createdAt": 1609459200000
+  },
+  {
+    "id": "48",
+    "title": "What If?",
+    "author": "Randall Munroe",
+    "category": "Science",
+    "price": 64.9,
+    "stock": 21,
+    "imageUrl": "images/books/science-8.jpg",
+    "createdAt": 1609459200000
+  }
+]
